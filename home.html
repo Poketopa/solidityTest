@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERC-20 web3</title>
+</head>
+<body>
+    <h1>ERC-20 Token DApp</h1>
+
+    <!-- MetaMask 연결 버튼 -->
+    <button id="connectWallet">지갑 연결</button>
+    <button id="disconnectButton">지갑 연결 해제</button>
+
+    <p id="account"></p>
+    <!-- 잔액 확인 버튼-->
+    <h2>잔액 확인</h2>
+    <button id="balanceButton">잔액 확인</button>
+    <p id="balanceResult"></p>
+
+    <!-- 잔액 없음 버튼 -->
+    <h2>잔액</h2>
+    <p id="balance">잔액 없음</p>
+
+    <!-- 토큰 전송 -->
+    <h2>토큰 전송</h2>
+    <input type="text" id="toAddress" placeholder="받는 주소">
+    <input type="number" id="amount" placeholder="보낼 토큰 양">
+    <button id="sendToken">토큰 전송</button>
+    <p id="sendResult"></p>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
